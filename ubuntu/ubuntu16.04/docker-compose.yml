@@ -1,0 +1,8 @@
+version: "3"
+services:
+  ubuntu16.04:
+    container_name: ubuntu16.04
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: ubuntu16.04:local
