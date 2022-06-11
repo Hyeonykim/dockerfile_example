@@ -1,0 +1,15 @@
+version: "3"
+services:
+  quickbuild:
+    container_name: quickbuild-local
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: quickbuild:local
+    ports:
+      - 9810:8810
+    volumes:
+      - root_directory:/root/
+
+volumes:
+  root_directory:
